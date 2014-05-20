@@ -1,0 +1,11 @@
+# Here you can assign scripts to hosts and groups. Groups must be defined in 'groups.linux'. 
+# Hosts must be specified by hostname.
+# A script must be a script in the script-directory. This is normally the folder scripts. 
+# (You can define the script-path in the tuvalu*.conf by entry path_to_scripts). If the script 
+# is somewhere else, you have to use the full path.
+# If you use a name, which is not a name of a script, it will be treated as a command.
+
+#  Example:
+#   @myGroup;doit.bat;runit.bat
+#   hostname1;doit.bat;script1.bat
+

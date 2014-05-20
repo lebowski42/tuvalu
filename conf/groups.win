@@ -1,0 +1,5 @@
+# Here you can define groups of windows hosts. A host can be memeber of different groups.
+#
+#  Example:
+#   @myGroup;hostname1;hostname2;hostname3
+#   @theGroup;hostname1;hostname3

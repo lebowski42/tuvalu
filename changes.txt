@@ -1,0 +1,16 @@
+Z. 897 generateRemoveScript(catfile($_[1],$_[0]),catfile($local_scripts_dir,"$name-remove$extension"), "Remove $name (Version: $versionScript)", $_[3]);
+Z. 146-149:
+my $installedFile = catfile($x,"$hostname.installed");	# Info about installed and versionnumbers
+if(&setConfigOrDefault('hostname_in_filename',0,'i') == 0){
+	$installedFile = catfile($x,"this.installed");	# No hostname in filename if set so in tuvalu.conf
+}
+
+Z. 256: if(-e $todo and !exists $opts{'dry'}){
+
+Z. 80
+$configFile = "$volume$path"."tuvalu.conf";
+	# if a special conf-file for windows exists.
+	if($^O ne "linux" and -r "$volume$path"."tuvalu.win.conf"){
+		$configFile = "$volume$path"."tuvalu.win.conf";
+	}
+
